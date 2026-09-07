@@ -1,11 +1,3 @@
--- ============================================
--- VELORA WAREHOUSE MANAGEMENT - DATABASE SCRIPT
--- Run this file in MySQL Workbench (or phpMyAdmin)
--- to create the database, tables and sample data.
--- ============================================
-
-CREATE DATABASE IF NOT EXISTS velora_warehouse;
-USE velora_warehouse;
 
 -- ---------------------------------------------
 -- Table: products  (Inventory)
