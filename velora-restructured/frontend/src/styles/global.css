@@ -1,0 +1,170 @@
+@import "./variables.css";
+
+/* Base Overrides */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #238cff;
+}
+
+/* Reusable Utility Classes */
+.bg-velora-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.bg-velora-card:hover {
+  border-color: rgba(35, 140, 255, 0.2);
+}
+
+.bg-velora-card-interactive {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: all 0.25s ease;
+}
+
+.bg-velora-card-interactive:hover {
+  background-color: var(--bg-card-hover);
+  border-color: rgba(35, 140, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px -10px rgba(0, 0, 0, 0.6), var(--shadow-glow);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(7, 17, 31, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(24, 35, 49, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #238cff 0%, #46d5ff 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: var(--radius-button);
+  padding: 0.625rem 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(35, 140, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 22px rgba(70, 213, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+  border-radius: var(--radius-button);
+  padding: 0.625rem 1.5rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(35, 140, 255, 0.4);
+  color: #ffffff;
+}
+
+.btn-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-weight: 500;
+  border-radius: var(--radius-button);
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #ffffff;
+}
+
+/* Input Fields */
+.input-velora {
+  background-color: #0d1a2d;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-input);
+  color: #ffffff;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+}
+
+.input-velora:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(35, 140, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(35, 140, 255, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(70, 213, 255, 0.4); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}

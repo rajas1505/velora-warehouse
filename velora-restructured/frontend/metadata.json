@@ -1,0 +1,6 @@
+{
+  "name": "VELORA - Warehouse Management System",
+  "description": "Modern warehouse management system for inventory tracking, order processing, analytics, reports, and logistics operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+:root {
+  --bg-primary: #07111f;
+  --bg-secondary: #0b1525;
+  --bg-card: #182331;
+  --bg-card-hover: #1d2b3c;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-glow: rgba(35, 140, 255, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: #b9c7dd;
+  --text-muted: #64748b;
+  --primary-blue: #238cff;
+  --primary-cyan: #46d5ff;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --radius-card: 20px;
+  --radius-button: 40px;
+  --radius-input: 12px;
+
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(35, 140, 255, 0.25);
+  --shadow-cyan-glow: 0 0 25px rgba(70, 213, 255, 0.25);
+}
